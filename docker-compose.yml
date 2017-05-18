@@ -19,13 +19,15 @@ services:
       - backend_mongodb
      volumes:
         - ./backend/proxy:/opt/config
+     ports:
+      - "8125:8125/udp"
  
   backend_mysql : 
      image : backend_mysql
      build:
-        context: backend/mysql
+        context: backend/custom_mysql
      volumes:
-        - ./backend/mysql:/opt/config
+        - ./backend/custom_mysql:/opt/config
      links:
       - mysql:mysql
 

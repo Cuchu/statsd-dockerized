@@ -108,10 +108,10 @@ def memory():
         
         time.sleep(10)
         
-if __name__ == '__main__':
-    multiprocessing.Process(target=disk).start()
-    multiprocessing.Process(target=cpu_times).start()
-    multiprocessing.Process(target=cpu_times_percent).start()
-    multiprocessing.Process(target=memory).start()
+# if __name__ == '__main__':
+    # multiprocessing.Process(target=disk).start()
+    # multiprocessing.Process(target=cpu_times).start()
+    # multiprocessing.Process(target=cpu_times_percent).start()
+    # multiprocessing.Process(target=memory).start()
 
 
